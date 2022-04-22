@@ -38,7 +38,7 @@ ct = ColumnTransformer(
     remainder='passthrough'                        
 )
 
-X = np.array(ct.fit_transform(X), dtype=np.float)
+X = np.array(ct.fit_transform(X), dtype=float)
 labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
 
